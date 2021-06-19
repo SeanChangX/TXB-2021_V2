@@ -1,0 +1,26 @@
+{
+  "name": "TXB 2021 V2",
+  "version": "2.2",
+  "description": "There is no end to learning.",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_title": "TXB 2021"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "options_page": "",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "contextMenus",
+    "storage",
+    "downloads"
+  ],
+  "content_security_policy": "script-src 'self' https://cdn.firebase.com https://apis.google.com https://www.gstatic.com; object-src 'self'"
+}
